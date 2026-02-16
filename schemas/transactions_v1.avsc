@@ -1,0 +1,12 @@
+{
+  "type": "record",
+  "name": "TransactionV1",
+  "namespace": "transactions",
+  "fields": [
+    {"name": "id", "type": "string"},
+    {"name": "event_time", "type": "string"},
+    {"name": "amount", "type": "double"},
+    {"name": "user_email", "type": "string"},
+    {"name": "currency", "type": "string"}
+  ]
+}

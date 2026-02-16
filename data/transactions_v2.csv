@@ -1,0 +1,6 @@
+id,event_time,total_amount,user_email,currency
+201,2026-02-06T09:00:00Z,12.50,frank@example.com,USD
+202,2026-02-06T11:30:45Z,99.99,grace@example.com,USD
+203,2026-02-07T08:10:00Z,5.00,henry@example.com,EUR
+204,2026-02-08T15:00:10Z,250.00,ivy@example.com,USD
+205,2026-02-09T20:45:05Z,18.75,jack@example.com,INR
