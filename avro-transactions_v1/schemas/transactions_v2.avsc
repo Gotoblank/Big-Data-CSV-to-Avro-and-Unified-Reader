@@ -1,0 +1,16 @@
+{
+  "type": "record",
+  "name": "TransactionV2",
+  "namespace": "transactions",
+  "fields": [
+    {"name": "id", "type": "string"},
+    {"name": "event_time", "type": "string"},
+    {
+      "name": "total_amount",
+      "type": "double",
+      "aliases": ["amount"]
+    },
+    {"name": "user_email", "type": "string"},
+    {"name": "currency", "type": "string"}
+  ]
+}
