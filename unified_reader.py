@@ -15,8 +15,8 @@ with open(file_path, "rb") as f:
 
     for record in reader:
         # Handle schema evolution: v1 uses "amount", v2 uses "total_amount"
-        # Normalize to "total_amount" for unified output
-        amount = record.get("total_amount") or record.get("amount", 0.0)
+        # Normalize to "total_amount" for unified output (use key presence, not truthiness, so 0.0 is correct)
+        amount = record["total_amount"] if "total_amount" in record else record.get("amount", 0.0)
         
         print(
             record["id"],
